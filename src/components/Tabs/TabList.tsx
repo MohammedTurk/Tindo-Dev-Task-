@@ -1,11 +1,11 @@
 import { Children, cloneElement, isValidElement } from "react";
-import { useTabsContext } from "./index";
+import { useTabsContext } from "./Tabs";
 import { TabProps, propType } from "../types";
 
 // "isValidElement" check adds an extra layer of robustness to your code, making it more resilient to unexpected scenarios or changes in the data
 //  It helps prevent errors if non-React elements or invalid values are inadvertently passed as children.
 
-function TabList({ children }: propType) {
+export function TabList({ children }: propType) {
   const { onChange, activeTab } = useTabsContext();
 
   return (

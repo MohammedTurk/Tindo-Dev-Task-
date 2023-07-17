@@ -1,16 +1,8 @@
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useMemo,
-  useState,
-} from "react";
+import { createContext, useContext, useState } from "react";
+
 import { TabsContextType, propType } from "../types";
-import TabList from "./TabList";
-import TabPanels from "./TabPanels";
-import Panel from "./Panel";
-import Tab from "./Tab";
-import "./Tabs.css";
+import "../styles/Tabs.css";
+import { TabList, TabPanels, Tab, Panel } from "./index";
 
 const TabsContext = createContext<TabsContextType | null>(null);
 
@@ -27,15 +19,12 @@ export const useTabsContext = () => {
 
 export function Tabs({ children }: propType) {
   const [activeTab, setActiveTab] = useState<number>(0);
-  const onChange = useCallback((tabKey: number) => setActiveTab(tabKey), []);
 
-  const ProviderValue = useMemo(
-    () => ({
-      activeTab,
-      onChange,
-    }),
-    [activeTab, onChange]
-  );
+  const onChange = (tabKey: number) => {
+    setActiveTab(tabKey);
+  };
+
+  const ProviderValue = { activeTab, onChange };
 
   return (
     <TabsContext.Provider value={ProviderValue}>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "tabHeader": "Item One",
+    "tabContent": "Content One"
+  },
+  {
+    "id": "2",
+    "tabHeader": "Item Two",
+    "tabContent": "Content Two"
+  },
+  {
+    "id": "3",
+    "tabHeader": "Item Three",
+    "tabContent": "Content Three"
+  }
+]
+  
