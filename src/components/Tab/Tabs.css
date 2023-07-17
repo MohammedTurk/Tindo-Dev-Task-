@@ -1,0 +1,57 @@
+/* Styles for the tabs wrapper */
+.tabs-wrapper {
+    margin: 10rem auto;
+    max-width: 500px;
+    border-radius: 12px;
+    padding: 1.7rem;
+    border: 1px solid #ddd
+}
+
+/* Styles for the tab list */
+.tab-list {
+    display: flex;
+    gap: 10px;
+}
+
+/* Styles for each individual tab */
+.tab {
+    cursor: pointer;
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px;
+    position: relative;
+    transition: border-color 0.3s ease;
+}
+
+/* Styles for the active tab */
+.tab.active {
+    border-color: #1976d2;
+    color: #1976d2;
+}
+
+/* Animation for the active tab */
+@keyframes tabIndicator {
+    0% {
+        left: 0;
+        width: 0;
+    }
+
+    100% {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Styles for the active tab indicator */
+.tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1976d2;
+    animation: tabIndicator 0.3s ease;
+}
