@@ -1,18 +1,18 @@
 [
   {
     "id": "1",
-    "tabHeader": "Item One",
-    "tabContent": "Content One"
+    "tabHeader": "Animals",
+    "tabContent": "Animals are multicellular, eukaryotic organisms in the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, can reproduce sexually, and grow from a hollow sphere of cells, the blastula, during embryonic development."
   },
   {
     "id": "2",
-    "tabHeader": "Item Two",
-    "tabContent": "Content Two"
+    "tabHeader": "Reptile",
+    "tabContent": "Reptiles, in common parlance, are a group of tetrapods with an ectothermic ('cold-blooded') metabolism and amniotic development. Living reptiles comprise four orders: Testudines (turtles), Crocodilia (crocodilians), Squamata (lizards and snakes), and Rhynchocephalia (the tuatara"
   },
   {
     "id": "3",
-    "tabHeader": "Item Three",
-    "tabContent": "Content Three"
+    "tabHeader": "Amphibians",
+    "tabContent": "Amphibians are four-limbed and ectothermic vertebrates of the class Amphibia. All living amphibians belong to the group Lissamphibia. They inhabit a wide variety of habitats, with most species living within terrestrial, fossorial, arboreal or freshwater aquatic ecosystems."
   }
 ]
   
