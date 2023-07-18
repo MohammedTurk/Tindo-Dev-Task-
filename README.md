@@ -31,10 +31,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Usage
 
-1. Import the Tab component from components folder
-`` import Tabs from 'my-tabs-component'; ``
+1. Import the Tab component from the components folder
+`` import Tabs from "./components/Tabs/Tabs"; ``
 
-2. ```bash
+2. Set up your Tabs component and define the TabList, Tab, TabPanels, and Panel components within it: 
+```bash
      <Tabs>
         <Tabs.TabList>
           <Tabs.Tab>Item One</Tabs.Tab>
@@ -54,3 +55,30 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
         </Tabs.TabPanels>
       </Tabs>
 ```
+
+## API
+### Tabs
+The main wrapper component contains the tab list and tab panels. It manages the active tab state.
+#### Props
+"children": The child components of Tabs (TabList, TabPanels).
+<br/>
+### TabList
+The component that renders the list of tabs.
+#### Props
+"children": The child components of TabList (Tab).
+<br/>
+### Tab
+A single tab item.
+#### Props
+"children": The content of the tab item.
+<br/>
+### TabPanels
+The component that renders the content panels associated with each tab.
+#### Props
+"children": The child components of TabPanels (Panel).
+<br/>
+### Panel
+A single content panel is associated with a tab.
+#### Props
+"children": The content of the panel.
+
