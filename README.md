@@ -71,6 +71,8 @@ The component that renders the list of tabs.
 A single tab item.
 #### Props
 "children": The content of the tab item.
+"handelClick": The event to change the tab when clicking.
+"classes": The classes of the tab items.
 <br/>
 ### TabPanels
 The component that renders the content panels associated with each tab.
